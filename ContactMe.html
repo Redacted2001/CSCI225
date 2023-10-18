@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Me</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--CSS bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    </head>
-    <body>
+<head>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-        
-                    <div class="navbar">
-                        <ul>
-                            <li> <a href="https://www.usca.edu/"> USCA Webpage </a> </li>
-                            <li> <a href="#Assignments"> Asignment section </a> </li>
-                            <li> <a href="#Contact"> Contact Infomation </a> </li>
-                            <li><a href="#Schedule">Schedule </a></li>
-                            <li><a href="ContactMe.html">Contact Me</a></li>
-                            <li><a href="https://www.goodreads.com/en/book/show/24800">Book Recommendation</a></li>
-                        </ul>
-                    </div>
+    <title>Contact Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--CSS bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"> <a class="nav-link text-white" href="https://www.usca.edu/"> USCA Webpage
+                            </a> </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#Assignments"> Asignment section </a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link text-white" href="#Contact"> Contact Infomation </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#Schedule">Schedule </a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="ContactMe.html">Contact Me</a></li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="https://www.goodreads.com/en/book/show/24800">Book Recommendation</a></li>
+                    </ul>
                 </div>
             </div>
+        </div>
         <div class="row">
             <div class="col">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/EzxsTXNmVm0?si=lqDghXby86SjXczj"
-                    title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                   class="rounded" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
-        
+
             <div class="col">
                 <form action="Feedback">
-                    Firstname:
-                    <input type="text" name="fname" placeholder="Annon" required><br>
-                    Lastname:
-                    <input type="text" name="lname" placeholder="Annon" required><br>
-                    Email :
-                    <input type="email" name="mail" id="mail" placeholder="name@domain.com"><br>
-                    Do you recommend my site?
-                    <input type="radio" name="yes" id="yes">
-                    <label for="yes">yes</label>
-                    <input type="radio" name="no" id="no">
-                    <label for="no">no</label> <br>
-        
-                    On a scale of 1 to 10 how good is this site?<br>
-                    1 <input type="range" name="rating" id="rating" min="1" max="10"> 10 <br>
-        
-                    What is your Favorite Browser?<br>
-                    Google: <input type="checkbox" name="Google"><br>
-                    Bing: <input type="checkbox" name="Bing"> <br>
-                    Safari: <input type="checkbox" name="Safari"><br>
-                    Firefox: <input type="checkbox" name="Firefox"><br>
-                    Edge: <input type="checkbox" name="Edge"><br>
-        
-                    Make an Account (Optional): <br>
-                    User:
-                    <input type="text" name="Uname" placeholder="Name"><br>
-                    Password:
-                    <input type="password" name="pwd"><br>
-                    Number:
-                    <input type="text" name="pnumber" placeholder="(xxx)xxx-xxxx"><br>
-        
-                    Comments?<br>
-                    <textarea name="comment" id="" cols="30" rows="10">Speak now or forever hold your peace.</textarea><br>
+                    <div class="form-floating mb-3">
+                        <label for="fname">Firstname: </label>
+                        <input type="text" class="form-control" name="fname" id="fname" placeholder="Annon"
+                            required><br>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="lname"> Lastname: </label>
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="Annon"
+                            required><br>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <label for="mail"> Email : </label>
+                        <input type="email" class="form-control" name="mail" id="mail"
+                            placeholder="name@domain.com"><br>
+                        <small class="form-text text-muted">
+                            Email will not be shared.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        Do you recommend my site?
+                        <input type="radio" class="form-check-input" name="yes" id="yes">
+                        <label class="form-check-label" for="yes">yes</label>
+                        <input type="radio" class="form-check-input" name="no" id="no">
+                        <label class="form-check-label" for="no">no</label> <br>
+                    </div>
+
+                    <div class="form-group">
+                        On a scale of 1 to 10 how good is this site?<br>
+                        1 <input type="range" class="form-range" name="rating" id="rating" min="1" max="10"> 10 <br>
+                    </div>
+                    <div class="form-check">
+                        What is your Favorite Browser?<br>
+                        Google: <input type="checkbox" class="form-check-input" name="Google"><br>
+                        Bing: <input type="checkbox" class="form-check-input" name="Bing"> <br>
+                        Safari: <input type="checkbox" class="form-check-input" name="Safari"><br>
+                        Firefox: <input type="checkbox" class="form-check-input" name="Firefox"><br>
+                        Edge: <input type="checkbox" class="form-check-input" name="Edge"><br>
+                    </div>
+
+                    <div class="form-group">
+                        Make an Account (Optional): <br>
+                        User:
+                        <input type="text" class="form-control" name="Uname" placeholder="Name"><br>
+                        Password:
+                        <input type="password" class="form-control" name="pwd"><br>
+                        Number:
+                        <input type="text" class="form-control" name="pnumber" placeholder="(xxx)xxx-xxxx"><br>
+                    </div>
+
+                    <div class="form-group">
+                        Comments?<br>
+                        <textarea name="comment" class="form-control" id="Comments" cols="30"
+                            rows="10">Speak now or forever hold your peace.</textarea><br>
+                    </div>
                     <input type="button" value="Submit">
-        
+
                 </form>
             </div>
         </div>
-        </div>
-        <!--JS file from bootstrap.-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+    </div>
+    <!--JS file from bootstrap.-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
