@@ -1,0 +1,137 @@
+/* 00: CSS variables */
+:root {
+    --page-color: hsla(30, 32%, 88%, 0.9);
+    --body-color: hsla(61, 90%, 58%, 0.775);
+    --footbar-color: hsla(27, 43%, 65%, 1);
+    --tab-color: hsla(27, 43%, 55%, 1);
+    --footbar-height: 15vh;
+    --page-position: 85%;
+    --page-width: 30%;
+    --tab-gap: 2vw;
+    --tab-width: 10vw;
+    --tab-height: 5vh;
+    --border-color: black;
+}
+
+/* 01: Color */
+body {
+    background-image: url("../img/Beehouses.jpg");
+    background-color: var(--body-color);
+    padding: 5px;
+    margin: 0; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(32, 30, 30);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: goldenrod;
+}
+
+img {
+    float: right;
+    top: 20px;
+}
+
+p {
+    float: left;
+}
+
+/* 02: Typography */
+@font-face {
+    font-family: 'sans-serif';
+    src: url('../fonts/chunkfive.woff'); /* Fixed font file path */
+}
+
+header h1 {
+    float: left;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+    line-height: 3;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 40%;
+    width: 20%;
+    text-align: center;
+    background-color: var(--footbar-color);
+    border: 1px solid var(--border-color);
+    z-index: 3;
+}
+
+/* introduction */
+
+div.pic{
+    border: 3px solid black;
+    position: absolute;
+    top:50px;
+    right: 3px;    
+    margin: 5px;
+}
+
+div.Portfolio{
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    height: 200px;
+}
+div.Assignments{
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px;
+}
+div.introduction{
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px;
+    width: 975px;
+    height: 150px;
+    overflow-wrap:break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+div.Schedule{
+    border: 3px solid darkgray;
+    bottom: 100px;
+    float: right;
+    background-color: goldenrod;
+}
+div.address{
+    position: relative;
+    text-align: center;
+    border: 1px solid darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 10px;
+}
