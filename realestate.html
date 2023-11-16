@@ -1,0 +1,60 @@
+<html lang="en-us">
+<head><meta charset="UTF-8">
+    <link rel="stylesheet" href="css/realestatestyle.css">
+    <title>Real Estate Loan Calculator</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Buy</li>
+            <li>Sale</li>
+            <li>Loan</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="formbox" id="fb">
+        <form action="" name="lcalc">
+            <p>
+                Loan amount:
+                <input type="number" name="amount" id="amount">$
+            </p>
+            <p>
+                Interest rate:
+                <input type="number" name="irate" id="rate">%
+            </p>
+            <p>
+                Loan term:
+                <input type="number" name="loant" id="term">years
+            </p>
+            <p>
+                Loan start:
+                <input type="date" name="sY" id="start">
+            </p>
+            <p>
+                <input type="button" value="Calculate Payment" id="calc">
+            </p>
+        </form>
+    </div>
+    <div class="result" id="result"> 
+        <h1 id="payment"></h1>
+        <p id ="mbalance"> </p>
+    </div>
+    <script>
+        document.getElementById("calc").addEventListener("click", calc, false);
+        function calc() {
+            var amount = parseInt(document.getElementById("amount").value);
+            var start = document.getElementById("start").value;
+            var term = parseInt(document.getElementById("term").value);
+            var interest = (parseFloat(document.getElementById("rate").value))/100;
+            var output = "";
+            date = start;
+            var monthly = interest/(12);
+            var monthlyp = (amount*monthly)/(1-Math.pow((1+monthly),-(12*term)));
+            console.log(monthlyp);
+            document.getElementById("mbalance").innerHTML= "Monthly Balance is: "+monthlyp;
+        }
+
+    </script>
+</body>
+</html>

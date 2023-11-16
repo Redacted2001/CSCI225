@@ -1,0 +1,51 @@
+html {
+    padding: 0% var(1.5vw) 0% 0%;
+    background: url('../img/Estate.jpg');
+}
+body{
+    height: 100%;
+    font-family: sans-serif, Arial, Helvetica;
+}
+div.fb{
+    position: absolute;
+    background: rgb(14, 170, 222);
+    top: 0;
+    left: 40em;
+    margin: 5em;
+    padding: 2em;
+    width: 20em;
+    visibility: visible;
+    text-align: left;
+}
+
+div.result{
+    position: absolute;
+    background-color: cadetblue;
+    top: 37%;
+    left: 0.3%;
+    width: 35em;
+    text-align: center;
+    font-size: 12pt;
+}
+
+div.navbar {
+    height: 10%;
+    right: 50%;
+    z-index: 4;
+    background-color: rgb(206, 206, 206);
+    border: 1px solid black;
+    width: 20em;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    background-color: rgba(101, 42, 42, 0.404);
+    display: inline-block;
+    padding: 10px;
+    height: 25%;
+    color: white;
+}
+li:hover{
+    background-color: rgba(128, 128, 128, 0.623);
+}
